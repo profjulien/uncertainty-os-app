@@ -1,6 +1,5 @@
 // app/api/tick/route.ts
 import { NextRequest, NextResponse } from 'next/server';
-import OpenAI from 'openai';
 
 const openai = new OpenAI();  // uses OPENAI_API_KEY from Vercel env
 const KERNEL_URL = process.env.KERNEL_URL as string;
